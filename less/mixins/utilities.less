@@ -1,0 +1,46 @@
+// Clearfix
+//
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Center-align a block level element
+
+.center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dblock(){
+	overflow: hidden;
+	display: block;
+}
+
+.fleft(){
+	overflow: hidden;
+	float: left;
+}
+
+.fright(){
+	overdlow: hidden;
+	float: right;
+}
+
+// Vertical align
+//
+// Vertically center elements.
+// Example: an element has a height of 30px, so write out `.navbar-vertical-align(30px);` to calculate the appropriate top margin.
+
+.vertical-align(@element-height) {
+  margin-top: ((@navbar-height - @element-height) / 2);
+  margin-bottom: ((@navbar-height - @element-height) / 2);
+}
+
